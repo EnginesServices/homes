@@ -22,7 +22,7 @@
         "label": "homes"
       }
     },
-    "timestamp": "2019-04-27T10:54:20+10:00"
+    "timestamp": "2019-04-27T10:58:33+10:00"
   },
   "software": {
     "base": {
@@ -63,8 +63,10 @@
     "consumer_params": [
       {
         "name": "home_type",
+        "value": "all",
         "mandatory": true,
         "immutable": true,
+        "ask_at_build_time": true,
         "input": {
           "type": "select",
           "collection": {
