@@ -22,7 +22,7 @@
         "label": "homes"
       }
     },
-    "timestamp": "2019-04-27T10:58:33+10:00"
+    "timestamp": "2019-04-27T11:07:10+10:00"
   },
   "software": {
     "base": {
@@ -30,7 +30,7 @@
       "cardinal": "volmgr",
       "publisher_namespace": "EnginesSystem",
       "type_path": "homes",
-      "service_handle_field": "home_name",
+      "service_handle_field": "home_type",
       "parent_image": "engines/servicebase",
       "deployment_type": "worker",
       "default_stop_timeout": 0,
