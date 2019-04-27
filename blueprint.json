@@ -22,7 +22,7 @@
         "label": "homes"
       }
     },
-    "timestamp": "2019-04-27T11:07:10+10:00"
+    "timestamp": "2019-04-27T11:11:49+10:00"
   },
   "software": {
     "base": {
@@ -30,7 +30,7 @@
       "cardinal": "volmgr",
       "publisher_namespace": "EnginesSystem",
       "type_path": "homes",
-      "service_handle_field": "home_type",
+      "service_handle_field": "service_name",
       "parent_image": "engines/servicebase",
       "deployment_type": "worker",
       "default_stop_timeout": 0,
@@ -83,6 +83,28 @@
         "input": {
           "type": "text",
           "label": "List of users homes"
+        }
+      },
+      {
+        "name": "access",
+        "mandatory": true,
+        "input": {
+          "type": "select",
+          "collection": {
+            "items": {
+              "rw": "write",
+              "ro": "read only"
+            }
+          }
+        }
+      },
+      {
+        "name": "service_name",
+        "value": "_Engines_Field(home_type)_Engines_Field(access)",
+        "mandatory": true,
+        "immutable": true,
+        "input": {
+          "type": "string"
         }
       }
     ]
