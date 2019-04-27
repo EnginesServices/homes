@@ -22,7 +22,7 @@
         "label": "homes"
       }
     },
-    "timestamp": "2019-04-27T11:11:49+10:00"
+    "timestamp": "2019-04-27T11:14:57+10:00"
   },
   "software": {
     "base": {
@@ -103,8 +103,9 @@
         "value": "_Engines_Field(home_type)_Engines_Field(access)",
         "mandatory": true,
         "immutable": true,
+        "ask_at_build_time": true,
         "input": {
-          "type": "string"
+          "type": "hidden"
         }
       }
     ]
